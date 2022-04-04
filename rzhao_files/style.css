@@ -1,0 +1,299 @@
+/* Ce Liu hompage style (copied from Miki's page */
+
+body {
+	font: 14px Roboto, Arial, sans-serif;
+	// font: 14px Times New Roman, Serif;
+	color: #000;
+	background-color: rgb(233,234,237); /*rgb(204,204,204);*/ /*#565656;*/
+}
+
+.container {
+	width: 1000px;
+	min-height: 1000px;
+	max-height: 999999px; /* prevents font boosting */
+	margin: 56px auto 20px; /* top right bottom left */
+	box-shadow: 0 0 7px rgb(100,100,100);
+	text-align: left;
+	background: #fff;
+	padding: 14px 14px 14px 14px; /* top right bottom left */
+	z-index: 1;
+}
+
+.service{
+	margin-bottom: 5pt; 
+	margin-top: 5pt;
+}
+
+.service a {
+	/* unvisited link */
+	text-decoration: none;
+	color: #000088;
+}
+
+.service a:link {
+	color: #000088;
+}
+
+.service a:visited {
+	color: #000088;
+}
+
+.paper{
+	font: 15px Times New Roman, Serif;
+	// font: 15px Roboto, Arial, sans-serif;
+}
+
+.oral{
+	font-weight: bold;
+	color: #880000;
+}
+
+.award{
+	font-weight: bold;
+	color: MediumVioletRed;
+}
+
+.footer {
+	text-align: center;
+	font-size: 85%;
+}
+
+.name {
+	font-size: 190%;
+	font-weight: bold;
+	display: block;
+	text-align: left;
+	margin: 0;
+}
+
+/* Menu */
+
+.menu {
+	background-color: rgb(45,45,45);
+    left: 0;
+    top: 0;
+    width: 100%;
+	padding: 12px 0px;
+	text-align: center;
+	position: fixed;
+	z-index: 100;
+	width: 100%
+}
+
+.menu a {
+	font-size: 120%;
+	/*font-weight: bolder;*/
+	padding: 0.25ex 2ex;
+	color: rgb(240,240,240);
+	text-decoration: none;
+	transition: .2s;
+}
+
+.menu a:link {
+	color: rgb(240,240,240);
+	/*color: #9e9e9e;*/
+}
+
+.menu a:visited {
+	color: rgb(240,240,240);
+	/*color: #9e9e9e;*/
+}
+
+.menu a:hover, .menu a:active {
+    color: rgb(160,160,160);
+    /*color: #ffffff;*/
+	text-decoration: none;
+}
+
+/* Email */
+
+.hide { display: none; }
+.mock { }
+.unselectable { /* http://stackoverflow.com/questions/2310734/how-to-make-html-text-unselectable */
+ 	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* News */
+
+a.button {
+	text-decoration:none;
+	color: rgb(0,0,200);
+	cursor: pointer
+}
+
+table.news_table {
+	border: 0;
+	height: 210px;
+	display: block;
+	overflow: auto;	
+}
+
+table.news_table td:first-child { /* "New!" icon */
+	vertical-align: top;
+}
+
+table.news_table td:nth-child(2) { /* Month */
+	width: 10px;
+	text-align: left;
+	vertical-align: top;
+	font-style: italic;
+}
+
+table.news_table td:nth-child(3) { /* Day */
+	width: 10px;
+	text-align: left;
+	vertical-align: top;
+	font-style: italic;
+}
+
+table.news_table td:nth-child(4) { /* Year */
+	width: 10px;
+	vertical-align: top;
+	font-style: italic;
+}
+
+table.news_table td:nth-child(5) { /* Margin */
+	width: 6px;
+}
+
+table.news_table td:nth-child(6) { /* Text */
+	vertical-align: top;
+}
+
+/* Links */
+
+a {
+  	text-decoration:none;
+}
+
+a:link, a:visited {
+	color: rgb(0,0,200);
+}
+
+a:hover {
+	color: #333;
+	text-decoration:underline;
+}
+
+a.anchor {
+	display: block; 
+	position: relative; 
+	top: -38px; 
+	visibility: hidden;
+}
+
+
+/* Section headings */
+
+.section {
+	font-size: 140%;
+	font-weight: bold;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+	vertical-align: middle;
+	border-top: 1px solid rgb(160,160,160);
+}
+
+
+/* Projects */
+
+.project_name {
+	font-size: 110%;
+	font-weight: bold;
+	display: block;
+	padding-bottom: 6px;
+}
+
+.project_abstract {
+	display: block;
+	padding-bottom: 6px;
+}
+
+table.projects_table {
+	vertical-align: top;
+	border-spacing: 6px 14px;
+}
+
+img.project_thumbnail {
+	width: 250px;
+	border: 1px solid black;
+	padding: 1px;
+}
+
+table.my_table {
+	border-spacing: 6px 14px; /* horiz vert */
+}
+
+table.my_table td.image {
+	text-align: center;
+	vertical-align: top;
+}
+
+img.thumb {
+	width: 160px;
+	border: 1px solid black;
+	padding: 1px;
+}
+
+/* Lists */
+
+ul {
+	margin-left: 18px;
+	padding-left: 4px; 
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* Talks */
+
+table.talks {
+	margin-top: 10px;
+	margin-left: 0px;
+}
+
+
+/* Press */
+
+table.press {
+	margin-left: 8px;
+
+}
+
+#press1 ul {
+	list-style-type: none;
+	margin-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#press1 li {
+	margin-bottom: 3px;
+}
+
+.emph {
+	font-size: 1.15em;
+	font-weight: bold;
+}
+
+.abstract {
+	width:90%; 
+	margin:10px; 
+	padding:10px; 
+	background:ivory;
+	border:2px solid #aaa;
+	display: none;
+}
+
+
+.date {
+	font-size: 80%;
+}
