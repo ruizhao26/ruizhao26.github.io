@@ -9,13 +9,16 @@
 </head>
 
 <body>
-  <div class="menu"> <a href="https://ruizhao26.github.io/index.html">Home</a> <a href="https://ruizhao26.github.io/index.html#education">Education</a> 
+  <div class="menu"> <a href="https://ruizhao26.github.io/index.html">Home</a> 
+  <a href="https://ruizhao26.github.io/index.html#news">News</a> 
+  <a href="https://ruizhao26.github.io/index.html#bio">Bio</a> 
+  <a href="https://ruizhao26.github.io/index.html#education">Education</a> 
   <a href="https://ruizhao26.github.io/index.html#publications">Publications</a> 
   <a href="https://ruizhao26.github.io/index.html#awards"> Services/Honors</a>   
   <!-- <a href="https://ruizhao26.github.io/index.html#code"> Code/Data</a>  -->
   </div>
   <div class="container">
-    <table border="0">
+    <table border="0" class="profile">
       <tbody><tr>
         <td><img src="./rzhao_files/profile_crop.jpg" width="180" height="200"></td>
         <td style="width: 10px">&nbsp;</td>
@@ -23,8 +26,8 @@
           <span class="name">Rui Zhao (赵睿)</span>
           <p class="information"><br>
           Ph.D. Candidate, <br>
-          <a href="https://cs.pku.edu.cn/">School of Computer Science</a> - <a href="https://idm.pku.edu.cn/">Institute of Digital Media</a> <br>
-          <a href="https://www.pku.edu.cn/">Peking University</a>.</p>
+          <a href="https://cs.pku.edu.cn/English/Home.htm">School of Computer Science</a> - <a href="https://idm.pku.edu.cn/en/">Institute of Digital Media</a> <br>
+          <a href="https://english.pku.edu.cn/">Peking University</a>.</p>
 
           <p class="information">No.5 Yiheyuan Road, <br>
           Haidian District, Beijing, <br>
@@ -36,15 +39,32 @@
       </tr>
     </tbody></table>
 
-    <!-- <a id="bio" class="anchor"></a><span class="section">Breif Bio</span>
-    <p class="bio">
-      Rui Zhao received the B.E. degree in Communication Engineering from the Tianjin University, Tianjin, China, in 2020. He
-      is currently pursuing the Ph.D. degree in Computer Science with Peking University, Beijing, China. His research interests include areas of image processing,
+    <a id="news" class="anchor"></a>
+    <span class="section">News</span>
+    <table border="0" class="news">
+    <tr>
+      <td>
+        <p><strong>[2022.09]</strong> One first-authored paper for spike-based optical flow is accepted by <strong>NeurIPS 2022</strong>.</p>
+        <p><strong>[2022.06]</strong> I obtain President Scholarship for Ph.D. Student of Peking University.</p>
+        <p><strong>[2022.03]</strong> One jointly first-authored paper for spike-based optical flow is accepted by <strong>CVPR 2022</strong>.</p>
+      </td>
+    </tr>
+  </table>
+
+
+    <a id="bio" class="anchor"></a>
+    <span class="section">Breif Bio</span>
+    <table border="0" class="bio" width="85%">
+    <tr>
+    <td width="80%">
+      I received the B.E. degree in Communication Engineering from the Tianjin University, Tianjin, China, in 2020. I am currently pursuing the Ph.D. degree in Computer Science with Peking University, Beijing, China. My research interests include areas of image processing,
       computational photography and computer vision, particularly for topics related to motion estimation and neuromorphic cameras.
-    <p>&nbsp;</p> -->
+    </td>
+    </tr>
+  </table>
 
 
-    <a id="education" class="anchor"></a><span class="section">Education</span>
+    <a id="education" class="education"></a><span class="section">Education</span>
     <p class="education">
     <b>Peking University</b>. <br>
     2020 - present, Ph.D., &nbsp; Computer Science.       
@@ -59,11 +79,11 @@
     </p>
       
     <p>&nbsp;</p>
-    
+
 
     <!-- Publication session -->
     <a id="publications" class="anchor"></a><span class="section">Publications</a> </span>
-    <table border="0" width="95%" class="paper">
+    <table border="0" width="95%" class="paper" style="border-collapse:separate; border-spacing:10px;">
       <tbody>
 
       <tr>
@@ -71,10 +91,11 @@
           <img src="./images/pubpic/neurips2022.png" width="200" height="90">
         </td>
         <td>
-          <strong> Rui Zhao</strong>, Rui Zhao, Ruiqin Xiong, Jing Zhao, Zhaofei Yu, Jian Zhang and Tiejun Huang <br>
-          Learning Optical Flow From Continuous Spike Streams <br>
-          <em> Conference on Neural Information Processing Systems </em> (<strong>NeurIPS</strong>) 2022 <br>
-          [<font color="#000080">coming soon</font>]
+          <papertitle><a href="https://ruizhao26.github.io">
+          Learning Optical Flow From Continuous Spike Streams</a></papertitle> <br>
+          <strong> Rui Zhao</strong>, Ruiqin Xiong, Jing Zhao, Zhaofei Yu, Xiaopeng Fan and Tiejun Huang <br>
+          <em> Annual Conference on Neural Information Processing Systems </em> (<strong>NeurIPS</strong>) 2022 <br>
+          [coming soon]
         </td>
       </tr>
 
@@ -82,12 +103,16 @@
         <td>
           <img src="./images/pubpic/cvpr2022.png" width="200" height="90">
         </td>
-        <td bgcolor="#e9eaed">
-          Liwen Hu#, <strong> Rui Zhao#</strong>, Ziluo Ding, Lei Ma, Boxin Shi, Ruiqin Xiong and Tiejun Huang. (# Equal Contribution) <br>
-          Optical Flow Estimation for Spiking Camera. <br>
+        <!-- <td bgcolor="#e9eaed"> -->
+        <td>
+          <papertitle><a href="https://openaccess.thecvf.com/content/CVPR2022/html/Hu_Optical_Flow_Estimation_for_Spiking_Camera_CVPR_2022_paper.html">
+          Optical Flow Estimation for Spiking Camera</a></papertitle> <br>
+          Liwen Hu#, <strong> Rui Zhao#</strong>, Ziluo Ding, Lei Ma, Boxin Shi, Ruiqin Xiong and Tiejun Huang. <br>
+          (# Equal Contribution) <br>
           <em> IEEE/CVF Conference on Computer Vision and Pattern Recognition </em> (<strong>CVPR</strong>) 2022 <br>
-          [<a href="https://128.84.4.13/pdf/2110.03916.pdf"><font color="#000080">pdf</font></a>]
-          [<a href="https://github.com/Acnext/Optical-Flow-For-Spiking-Camera"><font color="#000080">code</font></a>]
+          [<a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Hu_Optical_Flow_Estimation_for_Spiking_Camera_CVPR_2022_paper.pdf">pdf</a>]
+          [<a href="https://arxiv.org/abs/2110.03916">arxiv</a>]
+          [<a href="https://github.com/Acnext/Optical-Flow-For-Spiking-Camera">code</a>]
         </td>
       </tr>
 
@@ -96,11 +121,13 @@
           <img src="./images/pubpic/aaai2022_2.png" width="200" height="150">
         </td>
         <td>
+          <papertitle><a href="https://ojs.aaai.org/index.php/AAAI/article/view/19931">
+          Spatio-Temporal Recurrent Networks for Event-Based Optical Flow Estimation</a></papertitle> <br>
           Ziluo Ding, <strong> Rui Zhao</strong>, Jiyuan Zhang, Tianxiao Gao, Ruiqin Xiong, Zhaofei Yu and Tiejun Huang.<br>
-          Spatio-Temporal Recurrent Networks for Event-Based Optical Flow Estimation. <br>
           <em> AAAI Conference on Artificial Intelligence </em> (<strong>AAAI</strong>) 2022 <br>
-          [<a href="https://arxiv.org/pdf/2109.04871.pdf"><font color="#000080">pdf</font></a>]
-          [<a href="https://github.com/ruizhao26/STE-FlowNet"><font color="#000080">code</font></a>]
+          [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/1993">pdf</a>]
+          [<a href="https://arxiv.org/abs/2109.04871">arxiv</a>]
+          [<a href="https://github.com/ruizhao26/STE-FlowNet">code</a>]
         </td>
       </tr>
 
@@ -108,11 +135,13 @@
         <td>
           <img src="./images/pubpic/csvt2022_2.png" width="200" height="80">
         </td>
-        <td bgcolor="#e9eaed">
+        <!-- <td bgcolor="#e9eaed"> -->
+        <td>
+          <papertitle><a href="https://ieeexplore.ieee.org/document/9648363">
+          MRDFlow: Unsupervised Optical Flow Estimation Network With Multi-Scale Recurrent Decoder</a></papertitle> <br>
           <strong>Rui Zhao</strong>, Ruiqin Xiong, Ziluo Ding, Xiaopeng Fan, Jian Zhang and Tiejun Huang. <br>
-          MRDFlow: Unsupervised Optical Flow Estimation Network With Multi-Scale Recurrent Decoder. <br>
           <em> IEEE Transactions on Circuits and Systems for Video Technology </em> (<strong>TCSVT</strong>) 2022 <br>
-          [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9648363"><font color="#000080">pdf</font></a>]
+          [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9648363">pdf</a>]
         </td>
       </tr>
 
@@ -121,10 +150,11 @@
           <img src="./images/pubpic/icip2021.png" width="200" height="100">
         </td>
         <td>
+          <papertitle><a href="https://ieeexplore.ieee.org/document/9506149">
+            Recover the Residual of Residual: Recurrent Residual Refinement Network for Image Super-Resolution</a></papertitle> <br>
           Tianxiao Gao, Ruiqin Xiong, <strong>Rui Zhao</strong>, Jian Zhang, Shuyuan Zhu and Tiejun Huang. <br>
-          Recover the Residual of Residual: Recurrent Residual Refinement Network for Image Super-Resolution. <br>
           <em> IEEE International Conference on Image Processing </em> (<strong>ICIP</strong>) 2021 <br>
-          [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9506149"><font color="#000080">pdf</font></a>]
+          [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9506149">pdf</a>]
         </td>
       </tr>
 
@@ -132,11 +162,13 @@
         <td>
           <img src="./images/pubpic/vcip2020a.png" width="200" height="100">
         </td>
-        <td bgcolor="#e9eaed">
+        <!-- <td bgcolor="#e9eaed"> -->
+        <td>
+          <papertitle><a href="https://ieeexplore.ieee.org/document/9301771">
+            Optical Flow Estimation Between Images of Different Resolutions via Variational Method</a></papertitle> <br>
           <strong>Rui Zhao</strong>, Ruiqin Xiong, Shuyuan Zhu, Bing Zeng, Tiejun Huang and Wen Gao. <br>
-          Optical Flow Estimation Between Images of Different Resolutions via Variational Method. <br>
           <em> IEEE International Conference on Visual Communications and Image Processing </em> (<strong>VCIP</strong>) 2020 <br>
-          [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9301771"><font color="#000080">pdf</font></a>]
+          [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9301771">pdf</a>]
         </td>
       </tr>
 
@@ -145,10 +177,11 @@
           <img src="./images/pubpic/vcip2020b.png" width="200" height="120">
         </td>
         <td>
+          <papertitle><a href="https://ieeexplore.ieee.org/document/9301840">
+            Motion Estimation for Spike Camera Data Sequence via Spike Interval Analysis</a></papertitle> <br>
           Jing Zhao, Ruiqin Xiong, <strong>Rui Zhao</strong>, Ruiqin Xiong, Jin Wang, Siwei Ma and Tiejun Huang. <br>
-          Motion Estimation for Spike Camera Data Sequence via Spike Interval Analysis. <br>
           <em> IEEE International Conference on Visual Communications and Image Processing </em> (<strong>VCIP</strong>) 2020 <br>
-          [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9301840"><font color="#000080">pdf</font></a>]
+          [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9301840">pdf</a>]
         </td>
       </tr>
 
@@ -160,49 +193,49 @@
 
               
     <!-- Awards session -->
-    <a id="awards" class="anchor"></a><span class="section">Services and Honors </span>
+    <a id="awards"></a><span class="section">Services and Honors </span>
 
   <ul>
    
     <li>
       <p style="line-height: 150%; margin-left: 15px; margin-top: 0pt; margin-bottom: 0pt;"><b>
-        <font color="#444444" face="Arial" size="2"><font color="#444444" face="Arial" size="2"><b><font color="#444444" face="Arial">
+        <font color="#444444" face='Lato' size="2"><font color="#444444" face='Lato' size="2"><b><font color="#444444" face='Lato'>
           Reviewer of TIP, TMM, TCSVT, ICIP 2022, CVPR 2022, ECCV 2022, AAAI 2023 </font></b></font></font></b></p>
     </li>
    
     <li>
       <p style="line-height: 150%; margin-left: 15px; margin-top: 0pt; margin-bottom: 0pt;"><b>
-        <font color="#444444" face="Arial" size="2"><font color="#444444" face="Arial" size="2"><b><font color="#444444" face="Arial">
+        <font color="#444444" face='Lato' size="2"><font color="#444444" face='Lato' size="2"><b><font color="#444444" face='Lato'>
           President Scholarship for Ph.D. Student of Peking University (2%), 2022</font></b></font></font></b></p>
     </li>
 
     <li>
       <p style="line-height: 150%; margin-left: 15px; margin-top: 0pt; margin-bottom: 0pt;"><b>
-        <font color="#444444" face="Arial" size="2"><font color="#444444" face="Arial" size="2"><b><font color="#444444" face="Arial">
+        <font color="#444444" face='Lato' size="2"><font color="#444444" face='Lato' size="2"><b><font color="#444444" face='Lato'>
           President Scholarship for Ph.D. Student of Peking University (2%), 2021</font></b></font></font></b></p>
     </li>
 
     <li>
       <p style="line-height: 150%; margin-left: 15px; margin-top: 0pt; margin-bottom: 0pt;"><b>
-        <font color="#444444" face="Arial" size="2"><font color="#444444" face="Arial" size="2"><b><font color="#444444" face="Arial">
+        <font color="#444444" face='Lato' size="2"><font color="#444444" face='Lato' size="2"><b><font color="#444444" face='Lato'>
           President Scholarship for Ph.D. Student of Peking University (2%), 2020</font></b></font></font></b></p>
     </li>
 
     <li>
       <p style="line-height: 150%; margin-left: 15px; margin-top: 0pt; margin-bottom: 0pt;"><b>
-        <font color="#444444" face="Arial" size="2"><font color="#444444" face="Arial" size="2"><b><font color="#444444" face="Arial">
+        <font color="#444444" face='Lato' size="2"><font color="#444444" face='Lato' size="2"><b><font color="#444444" face='Lato'>
           Outstanding Student Model Honorable Mention Scholarship of Tianjin University (0.05%), 2019</font></b></font></font></b></p>
     </li>
 
     <li>
       <p style="line-height: 150%; margin-left: 15px; margin-top: 0pt; margin-bottom: 0pt;"><b>
-        <font color="#444444" face="Arial" size="2"><font color="#444444" face="Arial" size="2"><b><font color="#444444" face="Arial">
+        <font color="#444444" face='Lato' size="2"><font color="#444444" face='Lato' size="2"><b><font color="#444444" face='Lato'>
           National Scholarship for Bachelor Student of Tianjin University (2%), 2019</font></b></font></font></b></p>
     </li>
 
     <li>
       <p style="line-height: 150%; margin-left: 15px; margin-top: 0pt; margin-bottom: 0pt;"><b>
-        <font color="#444444" face="Arial" size="2"><font color="#444444" face="Arial" size="2"><b><font color="#444444" face="Arial">
+        <font color="#444444" face='Lato' size="2"><font color="#444444" face='Lato' size="2"><b><font color="#444444" face='Lato'>
           National Scholarship for Bachelor Student of Tianjin University (2%), 2018</font></b></font></font></b></p>
     </li>
 
@@ -211,8 +244,8 @@
   </font>
   </ul>
 
-  <p><font color="#444444" face="Arial" size="2">&copy 2022 Rui Zhao. Thanks to <a href="http://people.csail.mit.edu/celiu"><font color="#000080">Dr. Ce Liu</font></a> and 
-  <a href="https://deqings.github.io/index.html"><font color="#000080">Dr. Deqing Sun</font></a> for the template. They are great role models in low level vision! </font></p>
+  <p><font color="#444444" face='Lato' size="2">&copy 2022 Rui Zhao. Thanks to <a href="http://people.csail.mit.edu/celiu"><font color="#000080">Dr. Ce Liu</font></a> and 
+  <a href="https://deqings.github.io/index.html"><font color="#000080">Dr. Deqing Sun</font></a> for the template. </font></p>
 
   <!-- </div> -->
   <!-- <script>

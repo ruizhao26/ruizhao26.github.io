@@ -1,11 +1,20 @@
 /* Ce Liu hompage style (copied from Miki's page */
-
-body {
-	font: 14px Roboto, Arial, sans-serif;
-	// font: 14px Times New Roman, Serif;
+ 
+body{
+	font: 14px 'Lato', Arial, sans-serif;
 	color: #000;
 	background-color: rgb(233,234,237); /*rgb(204,204,204);*/ /*#565656;*/
 }
+
+tr{
+	display: block;
+	margin: 2px 0;
+}
+
+/* body,td,th,tr,p,a {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 12px
+    } */
 
 .container {
 	width: 1000px;
@@ -18,6 +27,38 @@ body {
 	padding: 14px 14px 14px 14px; /* top right bottom left */
 	z-index: 1;
 }
+
+papertitle {
+font-family: 'Lato', Verdana, Helvetica, sans-serif;
+font-size: 16px;
+/* font-weight: 700 */
+}
+
+.profile{
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px
+}
+
+.bio{
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 15px
+}
+
+.news{
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 15px
+}
+
+.paper{
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px
+}
+
+.education{
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px
+}
+
 
 .service{
 	margin-bottom: 5pt; 
@@ -38,10 +79,9 @@ body {
 	color: #000088;
 }
 
-.paper{
+/* .paper{
 	font: 15px Times New Roman, Serif;
-	// font: 15px Roboto, Arial, sans-serif;
-}
+} */
 
 .oral{
 	font-weight: bold;
@@ -172,12 +212,12 @@ a {
 }
 
 a:link, a:visited {
-	color: rgb(0,0,200);
+	color: #1762e0;
+    text-decoration:none;
 }
 
 a:hover {
 	color: #333;
-	text-decoration:underline;
 }
 
 a.anchor {
@@ -187,15 +227,17 @@ a.anchor {
 	visibility: hidden;
 }
 
+p.small {line-height:70%;}
+p.big {line-height:200%;}
 
 /* Section headings */
 
 .section {
-	font-size: 140%;
+	font-size: 160%;
 	font-weight: bold;
 	display: block;
 	margin-top: 5px;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	padding-top: 10px;
 	padding-bottom: 3px;
 	padding-left: 0px;
@@ -232,6 +274,7 @@ img.project_thumbnail {
 table.my_table {
 	border-spacing: 6px 14px; /* horiz vert */
 }
+
 
 table.my_table td.image {
 	text-align: center;
