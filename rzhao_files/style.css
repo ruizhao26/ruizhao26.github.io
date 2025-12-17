@@ -46,7 +46,7 @@ font-weight: 600
 
 .news{
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px
+    font-size: 14px;
 }
 
 .paper{
@@ -339,4 +339,10 @@ table.press {
 
 .date {
 	font-size: 80%;
+}
+
+.news-scroll-container {
+    height: 380px;       /* 这里设置你希望固定的高度，例如 300px */
+    overflow-y: auto;    /* 当内容超过高度时，自动显示垂直滚动条 */
+    padding-right: 10px; /*在此处留一点空隙，防止文字紧贴滚动条 */
 }
