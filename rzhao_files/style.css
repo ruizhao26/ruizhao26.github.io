@@ -17,7 +17,7 @@ tr{
     } */
 
 .container {
-	width: 1000px;
+	width: 1020px;
 	min-height: 1000px;
 	max-height: 999999px; /* prevents font boosting */
 	margin: 56px auto 20px; /* top right bottom left */
@@ -27,6 +27,7 @@ tr{
 	padding: 14px 14px 14px 14px; /* top right bottom left */
 	z-index: 1;
 }
+
 
 papertitle {
 font-family: 'Lato', Verdana, Helvetica, sans-serif;
@@ -343,6 +344,7 @@ table.press {
 
 .news-scroll-container {
     height: 380px;       /* 这里设置你希望固定的高度，例如 300px */
+	width: 98%;
     overflow-y: auto;    /* 当内容超过高度时，自动显示垂直滚动条 */
     padding-right: 10px; /*在此处留一点空隙，防止文字紧贴滚动条 */
 }
