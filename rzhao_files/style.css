@@ -4,6 +4,8 @@ body{
 	font: 15px 'Lato', Arial, sans-serif;
 	color: #000;
 	background-color: rgb(233,234,237); /*rgb(204,204,204);*/ /*#565656;*/
+	--page-width: 1140px;
+	--page-padding: 14px;
 }
 
 tr{
@@ -17,21 +19,21 @@ tr{
     } */
 
 .container {
-	width: 1020px;
+	width: var(--page-width);
 	min-height: 1000px;
 	max-height: 999999px; /* prevents font boosting */
 	margin: 56px auto 20px; /* top right bottom left */
 	box-shadow: 0 0 7px rgb(100,100,100);
 	text-align: left;
 	background: #fff;
-	padding: 14px 14px 14px 14px; /* top right bottom left */
+	padding: var(--page-padding); /* top right bottom left */
 	z-index: 1;
 }
 
 
 papertitle {
 font-family: 'Lato', Verdana, Helvetica, sans-serif;
-font-size: 14px;
+font-size: 13px;
 font-weight: 600
 }
 
@@ -42,17 +44,21 @@ font-weight: 600
 
 .bio{
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px
+    font-size: 13px;
+    line-height: 1.35;
 }
 
 .news{
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 13.5px;
+    line-height: 1.3;
+    width: 100%;
 }
 
 .paper{
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 13px
+    font-size: 12px;
+    line-height: 1.25;
 }
 
 .education{
@@ -234,16 +240,66 @@ p.big {line-height:200%;}
 /* Section headings */
 
 .section {
-	font-size: 160%;
+	font-size: 145%;
 	font-weight: bold;
 	display: block;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	padding-top: 10px;
-	padding-bottom: 3px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	padding-top: 8px;
+	padding-bottom: 2px;
 	padding-left: 0px;
 	vertical-align: middle;
 	border-top: 1px solid rgb(160,160,160);
+}
+
+.news p {
+	--news-item-gap: 8px;
+	margin-top: var(--news-item-gap);
+	margin-bottom: var(--news-item-gap);
+}
+
+.publication_table {
+	/* Publication tuning knobs */
+	--publication-table-width: 100%;
+	--publication-text-gap: 14px;
+	--publication-row-gap: 6px;
+	--publication-image-box-width: 170px;
+	--publication-image-padding-x: 0px;
+	--publication-title-font-size: 14px;
+	--publication-body-font-size: 13px;
+	border-collapse: separate;
+	border-spacing: var(--publication-text-gap) var(--publication-row-gap);
+	width: var(--publication-table-width);
+	font-size: var(--publication-body-font-size);
+}
+
+.publication_table td {
+	vertical-align: middle;
+}
+
+.publication_table td:first-child,
+.publication_image {
+	width: var(--publication-image-box-width);
+	min-width: var(--publication-image-box-width);
+	text-align: center;
+}
+
+.publication_table td:nth-child(2) {
+	width: auto;
+}
+
+.publication_table img {
+	box-sizing: border-box;
+	width: var(--publication-image-box-width);
+	height: auto;
+	object-fit: contain;
+	padding-left: var(--publication-image-padding-x);
+	padding-right: var(--publication-image-padding-x);
+}
+
+.publication_table papertitle {
+	font-size: var(--publication-title-font-size);
+	line-height: 1.22;
 }
 
 .organizations-table {
@@ -301,8 +357,43 @@ p.big {line-height:200%;}
 }
 
 table.projects_table {
+	/* Project tuning knobs */
+	--projects-left-indent: 42px;
+	--projects-text-gap: 14px;
+	--projects-row-gap: 6px;
+	--projects-image-box-width: 112px;
+	--projects-image-width: 88px;
+	--projects-image-align: center;
+	--projects-title-font-size: 13.5px;
+	--projects-body-font-size: 13px;
 	vertical-align: top;
-	border-spacing: 6px 14px;
+	border-collapse: separate;
+	border-spacing: var(--projects-text-gap) var(--projects-row-gap);
+	width: calc(95% - var(--projects-left-indent));
+	margin-left: var(--projects-left-indent);
+	font-size: var(--projects-body-font-size);
+	line-height: 1.28;
+}
+
+.projects_table td {
+	vertical-align: middle;
+}
+
+.projects_table td:first-child {
+	width: var(--projects-image-box-width);
+	min-width: var(--projects-image-box-width);
+	text-align: var(--projects-image-align);
+}
+
+.projects_table papertitle {
+	font-size: var(--projects-title-font-size);
+	line-height: 1.22;
+}
+
+.projects_table img {
+	width: var(--projects-image-width);
+	height: auto;
+	object-fit: contain;
 }
 
 img.project_thumbnail {
