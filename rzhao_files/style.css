@@ -246,6 +246,45 @@ p.big {line-height:200%;}
 	border-top: 1px solid rgb(160,160,160);
 }
 
+.organizations-table {
+	font-size: 12px;
+}
+
+.organizations-table tr {
+	display: table-row;
+	margin: 0;
+}
+
+.organizations-table td {
+	vertical-align: middle;
+}
+
+.organizations-table td:first-child {
+	width: 120px;
+}
+
+.organizations-table papertitle {
+	font-size: 12px;
+}
+
+.organizations-table img {
+	display: block;
+	width: 120px;
+	height: auto;
+}
+
+.organizations-table img.organizations-logo-vcip {
+	box-sizing: border-box;
+	padding-left: 14px;
+	padding-right: 14px;
+}
+
+.organizations-table img.organizations-logo-mlow {
+	box-sizing: border-box;
+	padding-left: 22px;
+	padding-right: 22px;
+}
+
 
 /* Projects */
 
