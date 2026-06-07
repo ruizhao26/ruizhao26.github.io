@@ -341,6 +341,16 @@ p.big {line-height:200%;}
 	padding-right: 22px;
 }
 
+#awards + .section + ul,
+#services + .section + ul {
+	font-size: 12px;
+}
+
+#awards + .section + ul font,
+#services + .section + ul font {
+	font-size: 12px;
+}
+
 
 /* Projects */
 
